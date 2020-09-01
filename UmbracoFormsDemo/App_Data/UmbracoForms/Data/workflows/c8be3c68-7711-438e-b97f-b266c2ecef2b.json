@@ -1,0 +1,18 @@
+{
+  "id": "c8be3c68-7711-438e-b97f-b266c2ecef2b",
+  "name": "Send template email to stan@naspinski.net",
+  "form": "9f5b1949-29e2-4eb0-8cec-3d234a92cf15",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "stan@naspinski.net",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "The Form '{form_name}' was submitted",
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": ""
+  },
+  "sortOrder": 0
+}

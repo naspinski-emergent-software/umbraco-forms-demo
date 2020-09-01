@@ -1,0 +1,18 @@
+{
+  "id": "e20c52f6-787e-48cd-a7e2-3718ef41c7da",
+  "name": "Email",
+  "form": "9f5b1949-29e2-4eb0-8cec-3d234a92cf15",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "stann@emergentsoftware.net",
+    "SenderEmail": "demo@naspinski.net",
+    "ReplyToEmail": "",
+    "Subject": "Form Demo",
+    "Message": "demo text",
+    "Attachment": ""
+  },
+  "sortOrder": 0
+}
