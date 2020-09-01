@@ -16,7 +16,7 @@
               "fields": [
                 {
                   "caption": "First Name",
-                  "tooltip": null,
+                  "tooltip": "anythign with a letter a, 2 characters at least",
                   "placeholder": null,
                   "cssClass": null,
                   "alias": "firstName",
@@ -28,7 +28,7 @@
                   "mandatory": true,
                   "regex": "^.{2,}$",
                   "requiredErrorMessage": null,
-                  "invalidErrorMessage": "must be at leat 2 characters",
+                  "invalidErrorMessage": "must be at least 2 characters",
                   "condition": {
                     "id": "00000000-0000-0000-0000-000000000000",
                     "enabled": false,
@@ -45,10 +45,304 @@
               ]
             }
           ],
+          "condition": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "enabled": false,
+            "actionType": "Show",
+            "logicType": "All",
+            "rules": []
+          }
+        },
+        {
+          "caption": "3-Column section",
+          "sortOrder": 0,
+          "id": "647d3319-8e13-4ab2-ba56-5fc7095cb98d",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 4,
+              "fields": [
+                {
+                  "caption": "File",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "file",
+                  "id": "042ac2d9-186f-4911-c7fc-afecd572f8ff",
+                  "fieldTypeId": "84a17cf8-b711-46a6-9840-0e4a072ad000",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {},
+                  "preValues": []
+                }
+              ]
+            },
+            {
+              "caption": "",
+              "width": 4,
+              "fields": [
+                {
+                  "caption": "Date",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "date",
+                  "id": "f2cc779b-7e43-4d39-90c9-6c67b9dd1e11",
+                  "fieldTypeId": "f8b4c3b8-af28-11de-9dd8-ef5956d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {},
+                  "preValues": []
+                }
+              ]
+            },
+            {
+              "caption": "",
+              "width": 4,
+              "fields": [
+                {
+                  "caption": "Dropdown",
+                  "tooltip": "Select C to show next Group",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "dropdown",
+                  "id": "0f4d40cb-44c6-4629-f9f1-74afa5f8dc9f",
+                  "fieldTypeId": "0dd29d42-a6a5-11de-a2f2-222256d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                }
+              ]
+            }
+          ],
+          "condition": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "enabled": true,
+            "actionType": "Show",
+            "logicType": "Any",
+            "rules": [
+              {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "field": "9b3f0d39-d66d-4cce-c821-6988149a46b2",
+                "operator": "Contains",
+                "value": "a"
+              }
+            ]
+          }
+        },
+        {
+          "caption": "Data Sources",
+          "sortOrder": 0,
+          "id": "959e4409-02c4-436f-a1ec-f1e62decf512",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 6,
+              "fields": [
+                {
+                  "caption": "Radio with datasource",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "radioWithDatasource",
+                  "id": "48b966ba-d736-46f1-e78c-1e89bb34364c",
+                  "fieldTypeId": "903df9b0-a78c-11de-9fc1-db7a56d89593",
+                  "prevalueSourceId": "ac4646a7-cd12-45ee-a135-b4a5c69dd6f6",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                }
+              ]
+            },
+            {
+              "caption": "",
+              "width": 6,
+              "fields": [
+                {
+                  "caption": "Long Question",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "longQuestion",
+                  "id": "a0312262-216e-4f32-bf74-7667724269cf",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {},
+                  "preValues": []
+                }
+              ]
+            }
+          ],
+          "condition": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "enabled": true,
+            "actionType": "Show",
+            "logicType": "Any",
+            "rules": [
+              {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "field": "0f4d40cb-44c6-4629-f9f1-74afa5f8dc9f",
+                "operator": "Is",
+                "value": "C"
+              }
+            ]
+          }
+        }
+      ],
+      "caption": "Page 1",
+      "sortOrder": 0,
+      "id": "00000000-0000-0000-0000-000000000000",
+      "form": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "fieldSets": [
+        {
+          "caption": "",
+          "sortOrder": 0,
+          "id": "13c3c7da-37b0-4b80-dec8-bbdf88d79697",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Some information here",
+                  "tooltip": "",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "someInformationHere",
+                  "id": "9d95111c-e6ae-4e68-bc6c-3a930cfe1226",
+                  "fieldTypeId": "e3fbf6c4-f46c-495e-aff8-4b3c227b4a98",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "Caption": "Headline for some information here",
+                    "BodyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Multi",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "multi",
+                  "id": "6a3466aa-0dfd-4d3e-b370-7e2d99f62c55",
+                  "fieldTypeId": "fab43f20-a6bf-11de-a28f-9b5755d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": [
+                    "1",
+                    "2"
+                  ]
+                }
+              ]
+            }
+          ],
           "condition": null
         }
       ],
-      "caption": "Section 1",
+      "caption": "Page 2",
       "sortOrder": 0,
       "id": "00000000-0000-0000-0000-000000000000",
       "form": "00000000-0000-0000-0000-000000000000"
@@ -67,10 +361,11 @@
   "manualApproval": false,
   "storeRecordsLocally": true,
   "cssClass": null,
-  "disableDefaultStylesheet": false,
+  "disableDefaultStylesheet": true,
   "useClientDependency": false,
   "workflows": [
-    "e20c52f6-787e-48cd-a7e2-3718ef41c7da"
+    "e20c52f6-787e-48cd-a7e2-3718ef41c7da",
+    "9116df3a-ea7b-444d-a3e7-5deab4c6b1d6"
   ],
   "datasource": null,
   "submitLabel": "Submit",

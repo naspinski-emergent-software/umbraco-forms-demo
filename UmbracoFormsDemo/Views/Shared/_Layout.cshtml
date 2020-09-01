@@ -1,0 +1,54 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    // Gets the home node for the CURRENT content tree.
+    // Since this is multi-site, it will be the home node of the site the user is visiting.
+    var homeNode = (Home)Model.AncestorOrSelf(1);
+    var currentPage = Umbraco.AssignedContentItem;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbraco Forms</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Umbraco Forms</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @foreach (var child in homeNode.Children())
+                    {
+                        <li><a href="@child.Url">@child.Name</a></li>
+                    }
+                    <li><a href="@Url.Action("pre", "Services")">pre-values</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="~/assets/scripts/jquery.validate.min.js"></script>
+    <script src="~/assets/scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>

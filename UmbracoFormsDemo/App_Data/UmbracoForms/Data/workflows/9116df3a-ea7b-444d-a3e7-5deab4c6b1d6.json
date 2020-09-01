@@ -1,0 +1,17 @@
+{
+  "id": "9116df3a-ea7b-444d-a3e7-5deab4c6b1d6",
+  "name": "POST",
+  "form": "9f5b1949-29e2-4eb0-8cec-3d234a92cf15",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "fd02c929-4e7d-4f90-b9fa-13d074a76688",
+  "executesOn": "Submitted",
+  "settings": {
+    "Url": "https://localhost:44352/umbraco/Surface/Services/handle-post",
+    "Method": "POST",
+    "Fields": "",
+    "Username": "",
+    "Password": ""
+  },
+  "sortOrder": 1
+}
