@@ -5,4 +5,11 @@
 }
 
 <h1>Umbraco Forms</h1>
-@Model.Value("body")
+<ul>
+    @foreach(var child in Model.Children())
+    {
+        <li>
+            <a href="@child.Url">@child.Name</a>
+        </li>
+    }
+</ul>
