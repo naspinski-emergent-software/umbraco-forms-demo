@@ -429,6 +429,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\Models\all.generated.cs" />
+    <Compile Include="App_Data\Models\models.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -452,6 +454,11 @@
     <Content Include="App_Plugins\UmbracoForms\Data\Web.config" />
     <Content Include="App_Plugins\UmbracoForms\Data\Templates\contactform.json" />
     <Content Include="App_Plugins\UmbracoForms\Data\Templates\commentform.json" />
+    <Content Include="App_Data\Models\all.dll.path" />
+    <Content Include="App_Data\Models\models.hash" />
+    <Content Include="App_Data\UmbracoForms\Data\forms\9f5b1949-29e2-4eb0-8cec-3d234a92cf15.json" />
+    <Content Include="App_Data\UmbracoForms\Data\workflows\c8be3c68-7711-438e-b97f-b266c2ecef2b.json" />
+    <Content Include="App_Data\UmbracoForms\Data\workflows\e20c52f6-787e-48cd-a7e2-3718ef41c7da.json" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -500,12 +507,17 @@
     <Content Include="Views\Partials\Forms\Emails\Example-Template.cshtml" />
     <Content Include="Views\MacroPartials\RenderUmbracoFormScripts.cshtml" />
     <Content Include="Views\MacroPartials\InsertUmbracoFormWithTheme.cshtml" />
+    <Content Include="Views\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\UmbracoForms\Data\datasources\" />
+    <Folder Include="App_Data\UmbracoForms\Data\prevaluesources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
